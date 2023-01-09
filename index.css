@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Overpass:wght@200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Overpass', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  width: 100%;
+}
+a {
+  text-decoration: none;
+}
+.header {
+  background-color: #11346f;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 40px;
+}
+.header-text {
+  margin: auto;
+  font-weight: 500;
+  font-size: 18px;
+  color: white;
+}
+.navbar {
+  background-color: #f7fdff;
+  height: 70px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.logo-img {
+  height: 30px;
+}
+
+.center {
+  display: flex;
+  justify-content: space-between;
+}
+.center-text,
+.center-text-bold {
+  margin: 60px;
+}
+.center-text-bold {
+  color: #11346f;
+  font-weight: 600;
+}
+.center-text {
+  color: #4b6693;
+  font-weight: 400;
+}
+.btn-primary {
+  background-color: #197aff;
+  color: white;
+  font-size: 14px;
+  padding: 12px 36px;
+  font-weight: 600;
+  border: 1px solid #197aff;
+  border-radius: 100px;
+  cursor: pointer;
+}
+.main {
+  position: relative;
+}
+.main-header {
+  color: #11346f;
+  margin-left: 120px;
+  margin-top: 40px;
+  font-size: 50px;
+  font-weight: 400;
+}
+.text-span {
+  color: #197aff;
+  font-weight: 600;
+}
+.arrow-img {
+  transform: rotate(270deg);
+  position: absolute;
+  margin-left: 20px;
+}
+.vector-img {
+  margin-left: 1020px;
+}
+.description {
+  margin-left: 120px;
+  width: 700px;
+  font-size: 18px;
+}
+.cards-container {
+  margin-left: 120px;
+  width: 840px;
+  border: 1px solid #d1e1fd;
+  border-radius: 10px;
+  background-color: #f3f6fb;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.cards {
+  padding: 10px;
+  text-align: center;
+}
+.card-title {
+  font-weight: 600;
+  color: #11346f;
+}
+.list-item {
+  font-size: 14px;
+}
