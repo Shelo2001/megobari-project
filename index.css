@@ -236,6 +236,7 @@ a {
   display: flex;
   justify-content: space-around;
   margin-top: 100px;
+  min-height: 90vh;
 }
 .card-container {
   position: relative;
@@ -329,6 +330,9 @@ a {
   justify-content: center;
   color: #ffffff;
 }
+.badge-red {
+  background-color: #ac5780;
+}
 .vector-svg {
   position: absolute;
   margin-top: 70px;
@@ -378,9 +382,93 @@ del {
 .reviews {
   display: flex;
   justify-content: space-around;
-  gap: 1400px;
+  gap: 1200px;
 }
 .reviews-span {
   color: #11346f;
+  font-weight: 700;
+}
+.btn-review {
+  border: 2px solid #213786;
+  color: #213786;
+  padding: 10px 26px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 6px;
+  background-color: transparent;
+}
+.review-cards {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+.review-card {
+  min-height: 520px;
+  max-height: 520px;
+  width: 320px;
+  border: 1px solid #e9e9e9;
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+.reviewer-name-span {
+  color: #11346f;
+  font-weight: 600;
+  font-size: 18px;
+}
+.faq {
+  background-color: #11346f;
+  margin-top: 50px;
+}
+.vector-img3 {
+  margin-left: 560px;
+  width: 260px;
+}
+.faq-container {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.accordion-container {
+  padding: 3rem;
+}
+
+.accordion {
+  margin: 20px;
+  border: 1px solid #31548e;
+  border-radius: 30px;
+  min-width: 900px;
+  color: white;
+}
+.accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 30px;
+  background-color: #194081;
+  transition: background-color 0.3s;
+}
+.accordion-header button {
+  color: white;
+  border: none;
+  background: transparent;
+  font-size: 30px;
+}
+.accordion-header,
+.accordion-body {
+  padding: 10px;
+}
+.accordion-body {
+  display: none;
+}
+
+.accordion.active .accordion-body {
+  display: block;
+}
+.accordion-title {
   font-weight: 600;
 }
