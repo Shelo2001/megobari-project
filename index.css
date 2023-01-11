@@ -18,7 +18,7 @@ a {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 1;
+  z-index: 2;
 }
 .header,
 .features-header {
@@ -471,4 +471,160 @@ del {
 }
 .accordion-title {
   font-weight: 600;
+}
+@media screen and (max-width: 390px) {
+  .header {
+    width: 390px;
+    display: flex;
+    align-items: center;
+  }
+  .header-text {
+    font-size: 12px;
+  }
+  .navbar {
+    width: 390px;
+  }
+  .center {
+    display: none;
+  }
+  .right {
+    display: none;
+  }
+  .main {
+    width: 390px;
+  }
+  .vector-img {
+    margin-left: 50px;
+    width: 100px;
+  }
+  .main-header {
+    margin-left: 10px;
+    width: 150px;
+    font-size: 24px;
+  }
+  .arrow-img {
+    transform: rotate(90deg);
+  }
+  .description {
+    width: 360px;
+    margin-left: 20px;
+  }
+  .container {
+    width: 390px;
+  }
+  .cards-container {
+    margin: 5px;
+    width: 390px;
+    height: 200px;
+  }
+  .list-item {
+    display: none;
+  }
+
+  .massage-img {
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    top: 170px;
+    left: -80px;
+  }
+  .buttons {
+    width: 390px;
+  }
+  .btn-buy {
+    width: 370px;
+    margin: 10px;
+    font-size: 16px;
+  }
+  .btn-buy-secondary {
+    width: 280px;
+    margin-left: 45px;
+  }
+  .customer-review {
+    width: 390px;
+    margin: 0;
+    margin-top: 20px;
+    gap: 10px;
+    max-height: 100px;
+  }
+  .person {
+    width: 80px;
+    height: 80px;
+  }
+  .review-comment {
+    font-size: small;
+    width: 100%;
+  }
+  .review-name {
+    width: 40%;
+  }
+  .review-name img {
+    width: 100px;
+    height: 20px;
+  }
+  .reviewer-name {
+    font-size: 12px;
+  }
+  .reviewer-info {
+    width: 56%;
+  }
+  .verified-buyer {
+    font-size: 12px;
+  }
+  .features-header {
+    width: 390px;
+  }
+  #item3 {
+    display: none;
+  }
+  .features-items {
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .features-items img {
+    width: 20px;
+    height: 20px;
+  }
+  .features-header-text {
+    margin: 0;
+    text-align: center;
+    font-size: 12px;
+  }
+  .features-main {
+    width: 390px;
+  }
+  .features-main-header {
+    font-size: 28px;
+  }
+  .features-main-header2 {
+    font-size: 24px;
+  }
+  .white-vector {
+    width: 200px;
+  }
+  .features-cards {
+    width: 360px;
+    flex-direction: column;
+    margin: 15px;
+  }
+  .card-container {
+    margin-top: 60px;
+  }
+  .card-header span {
+    font-size: 28px;
+  }
+  .arrow-svg {
+    margin-left: 70px;
+  }
+  .vector-svg {
+    margin-left: -50px;
+  }
+  .card-shipping-info-items {
+    height: 70px;
+  }
+  .card-shipping-info-item-price {
+    font-size: 12px;
+    max-height: 70px;
+  }
 }
