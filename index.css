@@ -402,6 +402,7 @@ del {
   display: flex;
   justify-content: space-around;
   margin-top: 50px;
+  transform: translate(0px);
 }
 
 .review-card {
@@ -472,7 +473,16 @@ del {
 .accordion-title {
   font-weight: 600;
 }
+#cardNavigation {
+  display: none;
+}
 @media screen and (max-width: 390px) {
+  .landing,
+  .faq,
+  .reviews-section,
+  .features {
+    max-width: 390px;
+  }
   .header {
     width: 390px;
     display: flex;
@@ -506,27 +516,34 @@ del {
     transform: rotate(90deg);
   }
   .description {
-    width: 360px;
+    width: 350px;
     margin-left: 20px;
   }
   .container {
     width: 390px;
   }
   .cards-container {
-    margin: 5px;
-    width: 390px;
-    height: 200px;
+    margin-left: 10px;
+    width: 370px;
+    height: 160px;
+  }
+  .cards img {
+    width: 30px;
+    height: 30px;
+  }
+  .card-title {
+    font-size: 14px;
   }
   .list-item {
     display: none;
   }
 
   .massage-img {
-    width: 200px;
+    width: 190px;
     height: 100px;
     position: absolute;
     top: 170px;
-    left: -80px;
+    left: -90px;
   }
   .buttons {
     width: 390px;
@@ -534,16 +551,21 @@ del {
   .btn-buy {
     width: 370px;
     margin: 10px;
-    font-size: 16px;
+    font-size: 14px;
   }
   .btn-buy-secondary {
     width: 280px;
-    margin-left: 45px;
+    margin-left: 55px;
+    margin-top: 10px;
+  }
+  .features {
+    margin-top: 300px;
   }
   .customer-review {
-    width: 390px;
-    margin: 0;
+    max-width: 390px;
+    margin-right: 0px;
     margin-top: 20px;
+    float: left;
     gap: 10px;
     max-height: 100px;
   }
@@ -559,7 +581,7 @@ del {
     width: 40%;
   }
   .review-name img {
-    width: 100px;
+    width: 80px;
     height: 20px;
   }
   .reviewer-name {
@@ -569,7 +591,7 @@ del {
     width: 56%;
   }
   .verified-buyer {
-    font-size: 12px;
+    font-size: 10px;
   }
   .features-header {
     width: 390px;
@@ -608,6 +630,9 @@ del {
     flex-direction: column;
     margin: 15px;
   }
+  .money-back {
+    font-size: 14px;
+  }
   .card-container {
     margin-top: 60px;
   }
@@ -626,5 +651,88 @@ del {
   .card-shipping-info-item-price {
     font-size: 12px;
     max-height: 70px;
+  }
+  .faq-container {
+    max-width: 390px;
+    flex-direction: column;
+  }
+  .faq-container img {
+    width: 340px;
+    height: 200px;
+  }
+  .faq .main .main-header {
+    text-align: center;
+    width: 100%;
+    margin-left: 0px;
+    font-size: 36px;
+  }
+  .reviews-section .main .main-header {
+    text-align: center;
+    width: 100%;
+    margin-left: 0px;
+    font-size: 30px;
+  }
+  .accordion-container {
+    padding: 0px;
+  }
+  .accordion-container,
+  .accordion-header,
+  .accordion {
+    width: 350px;
+  }
+  .accordion {
+    margin-left: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .accordion {
+    min-width: 350px;
+    max-width: 350px;
+  }
+  .reviews {
+    gap: 0px;
+  }
+  .review-number {
+    display: flex;
+    flex-direction: column;
+  }
+  .vector-img2,
+  .vector-img3 {
+    margin-left: 0;
+  }
+  .vector-img2 {
+    width: 200px;
+    margin-bottom: 20px;
+  }
+  #reviewcard1 {
+    display: none;
+  }
+  .review-cards {
+    justify-content: start;
+    gap: 30px;
+    margin-left: 20px;
+  }
+  #cardNavigation {
+    display: contents;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  #cardButtons1 {
+    color: #197aff;
+  }
+  .review-cards {
+    transition: 0.5s;
+  }
+  #cardNavigation button {
+    width: 40px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    color: #cbced6;
   }
 }
