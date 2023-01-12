@@ -711,8 +711,12 @@ del {
   }
   .review-cards {
     justify-content: start;
-    gap: 30px;
-    margin-left: 20px;
+    margin-left: 30px;
+    transition: 0.5s;
+    gap: 20px;
+    overflow-x: hidden;
+    max-width: 380px;
+    min-height: 600px;
   }
   #cardNavigation {
     display: contents;
@@ -721,11 +725,8 @@ del {
     justify-content: center;
     margin-top: 30px;
   }
-  #cardButtons1 {
+  .cardButton1 {
     color: #197aff;
-  }
-  .review-cards {
-    transition: 0.5s;
   }
   #cardNavigation button {
     width: 40px;
